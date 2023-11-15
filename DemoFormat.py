@@ -17,17 +17,17 @@ for x in range(1,6):
     print(x,"*",x,"=",str(x*x).zfill(5))
 
 #파일 쓰기
-f = open(r"c:\\work\\test.txt","wt",encoding="utf-8") #"wt" always overwrites the previous file
+f = open(r"c:\work\test.txt","wt",encoding="utf-8") #"wt" always overwrites the previous file
 f.write("first line\nsecond line\nthird line\n")
 f.close()
 
 #파일에 첨부
-f = open(r"c:\\work\\test.txt","a+",encoding="utf-8") #"a+" appends on the existing file
+f = open("c:\\work\\test.txt","a+",encoding="utf-8") #"a+" appends on the existing file
 f.write("additional line\n")
 f.close()
 
 #파일 읽기
-f = open(r"c:\\work\\test.txt","rt",encoding="utf-8")
+f = open("c:\\work\\test.txt","rt",encoding="utf-8")
 print(f.read())
 #f.close()
 
