@@ -10,7 +10,7 @@ cur = con.cursor()
 cur.execute("create table PhoneBook (name text, phoneNum text);")
 
 #1건 입력
-cur.execute("insert into PhoneBook values ('Ian', '010-3008-4166');")
+cur.execute("insert into PhoneBook values ('Ian', '010-3008-4166');")     
 
 #입력 파라미터 처리
 name = "harry"
